@@ -20,10 +20,6 @@ else:
 
 st.title("语音GPT")
 
-with st.sidebar:
-    baidu_api_key = st.text_input("BAIDU_API_KEY")
-    baidu_secret_key =st.text_input("BAIDU_SECRET_KEY")
-
 model = st.sidebar.selectbox(
     "请选择你的模型",
     ("gpt-3.5-turbo", "gpt-3.5-turbo-16k","gpt-3.5-turbo-0613","gpt-3.5-turbo-16k-0613" ,"gpt-4","gpt-4-0613")
